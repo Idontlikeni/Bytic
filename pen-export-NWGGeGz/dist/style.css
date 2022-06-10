@@ -1,0 +1,111 @@
+html,
+      body {
+        margin: 0;
+        padding: 0
+      }
+      body {
+        font-family: Helvetica;
+        color: #333;
+        width: 100%;
+      }
+
+
+      
+      #dd-quiz-do-i-have-a-concussion,
+      .quiz-header {
+        max-width: 900px;
+        margin: 0 auto;
+        width: 93vw;
+        padding: 10px;
+      }
+      #dd-quiz-do-i-have-a-concussion {
+        line-height: 22px;
+      }
+      #dd-quiz-do-i-have-a-concussion .quiz-submit,
+      #dd-quiz-do-i-have-a-concussion .dd-continue-container button {
+        padding: 10px 18px;
+        border-radius: 4px;
+        background: #00c0e0;
+        color: #fff;
+        border: 0;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 13px;
+        margin-bottom: 80px;
+      }
+      #dd-quiz-do-i-have-a-concussion .quiz-submit:hover {
+        background: #02a5c2;
+        transition: 0.333s;
+      }
+      #dd-quiz-do-i-have-a-concussion .question-grouped-answers {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        flex-wrap: wrap;
+      }
+      #dd-quiz-do-i-have-a-concussion .question-grouped-answers > div:not(:empty) {
+        width: 31%;
+        margin: 0 0 30px 0;
+      }
+      #dd-quiz-do-i-have-a-concussion .question-grouped-answers > div .question-answer {
+        font-size: 13px;
+      }
+      #dd-quiz-do-i-have-a-concussion .question-title {
+        font-size: 16px;
+        line-height: 23px;
+        font-weight: 600;
+        margin: 0 0 13px 0;
+      }
+      #dd-quiz-do-i-have-a-concussion .question-answers {
+        display: block;
+        margin: 0 0 30px 0;
+      }
+      #dd-quiz-do-i-have-a-concussion .question-answer {
+        display: block;
+        margin: 0 0 10px 0;
+        font-size: 15px;
+        line-height: 20px;
+      }
+      #dd-quiz-do-i-have-a-concussion .question-answer input {
+        margin-right: 5px;
+      }
+      #dd-quiz-do-i-have-a-concussion #quiz-result {
+        display: none;
+        margin: 20px 0 100px 0;
+      }
+      #dd-quiz-do-i-have-a-concussion .recommended-reading-item {
+        margin: 0 0 12px 0;
+      }
+      #dd-quiz-do-i-have-a-concussion .dd-continue-container {
+        margin: 0 0 20px 0;
+      }
+
+      @media only screen and (min-width: 460px) and (max-width: 768px) {
+        #dd-quiz-do-i-have-a-concussion .question-grouped-answers > div:not(:empty) {
+          width: 50%;
+          margin: 0 0 20px 0;
+        }
+      }
+
+      @media only screen and (max-width: 460px) {
+        #dd-quiz-do-i-have-a-concussion .question-grouped-answers > div:not(:empty) {
+          width: 100%;
+          margin: 0 0 20px 0;
+        }
+      }
+
+      #dd-quiz-footer {
+        background: linear-gradient(to right, rgb(0, 192, 225), rgb(25, 23, 96));
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      #dd-quiz-footer img {
+        max-height: 40px;
+      }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - CSS Modal</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://raw.githubusercontent.com/jchamill/jquery-quiz/master/src/jquery.quiz.css'><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<a class="button" href="#openModal">Подбери курс</a>
+
+<div id="openModal" class="modalbg">
+  <div class="dialog">
+    <a href="#close" title="Close" class="close">X</a>
+    <div id="quiz">
+      <div id="quiz-header">
+          <h1>Для выбора курса,<br> ответьте на наши вопросы.</h1>
+            <!-- <p class="faded">A quiz about the plugin built by the plugin.</p> -->
+      </div>
+      <div id="quiz-start-screen">
+          <p><a href="#" id="quiz-start-btn" class="quiz-button">Начать</a></p>
+      </div>
+    </div>
+	</div>
+</div>
+<!-- partial -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src='jquery.quizmin.js'></script><script  src="./script.js"></script>
+</body>
+</html>
