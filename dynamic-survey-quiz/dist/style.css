@@ -29,7 +29,7 @@
 .mm-survey-controller {
 	position: relative;
     height: 60px;
-    background: #333;
+    background: rgb(82, 82, 82);
     padding: 12px 14px;
 }
 
@@ -98,7 +98,7 @@
 .mm-survey-progress-bar {
 	height: 30px;
     width: 0%;
-    background: linear-gradient(to left, #4CB8C4, #3CD3AD);
+    background: linear-gradient(to left, rgba(124,194,67,1) 0%, rgba(57,73,171,1) 30%, rgba(142,36,170,1) 60%, rgba(251,140,0,1) 100%);
 }
 
 .mm-survey-q {
