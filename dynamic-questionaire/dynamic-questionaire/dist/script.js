@@ -1,430 +1,430 @@
 // var survey = JSON.parse(data);
-console.log("survey:", data);
+//console.log("survey:", data);
 jQuery(document).ready(function() {
-	var survey = JSON.parse(data);
-	console.log("survey:", data);
-	// var survey = {
-	// 	1:{
-	// 		'question': 'Do you have a website?',
-	// 		'answer':{
-	// 			1:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 4,
-	// 				'item': 'yes'
-	// 			},
-	// 			2:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 2,
-	// 				'item': 'no'
-	// 			}
-	// 		}
-	// 	},
-	// 	2:{
-	// 		'question': 'Do you have a domain?',
-	// 		'answer':{
-	// 			1:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 3,
-	// 				'item': 'yes'
-	// 			},
-	// 			2:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 6,
-	// 				'item': 'no'
-	// 			}
-	// 		}
-	// 	},
-	// 	3:{
-	// 		'question': 'Where did you purchase your domain?',
-	// 		'answer':{
-	// 			1:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 5,
-	// 				'item': 'namecheap.com'
-	// 			},
-	// 			2:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 5,
-	// 				'item': 'godaddy.com'
-	// 			},
-	// 			3:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 5,
-	// 				'item': 'bluehost.com'
-	// 			},
-	// 			4:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 5,
-	// 				'item': '1and1.com'
-	// 			},
-	// 			5:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 5,
-	// 				'item': 'other'
-	// 			}
-	// 		}
-	// 	},
-	// 	4:{
-	// 		'question': 'What is your domain name?',
-	// 		'answer':{
-	// 			// 1:{
-	// 			// 	'type': 'radio',
-	// 			// 	'dynamic': true,
-	// 			// 	'route': 3,
-	// 			// 	'item': 'kavada.com'
-	// 			// },
-	// 			// 2:{
-	// 			// 	'type': 'radio',
-	// 			// 	'dynamic': true,
-	// 			// 	'route': 3,
-	// 			// 	'item': 'mathewmaione.com'
-	// 			// },
-	// 			// 3:{
-	// 			// 	'type': 'radio',
-	// 			// 	'dynamic': true,
-	// 			// 	'route': 3,
-	// 			// 	'item': 'educoded.com'
-	// 			// },
-	// 			// 4:{
-	// 			// 	'type': 'radio',
-	// 			// 	'dynamic': true,
-	// 			// 	'route': 3,
-	// 			// 	'item': 'webdevlopr.com'
-	// 			// }
-	// 			1:{
-	// 				'type': 'text',
-	// 				'dynamic': true,
-	// 				'route': 3,
-	// 				'placeholder': 'example.com',
-	// 				'identity': 'mm-dynamic-domain'
-	// 			}
-	// 		}
-	// 	},
-	// 	5:{
-	// 		'question': 'Who is hosting your domain?',
-	// 		'answer':{
-	// 			1:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 6,
-	// 				'item': 'godaddy'
-	// 			},
-	// 			2:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 6,
-	// 				'item': 'host gator'
-	// 			},
-	// 			3:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 6,
-	// 				'item': 'amazon'
-	// 			},
-	// 			4:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 6,
-	// 				'item': 'not listed'
-	// 			},
-	// 			5:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 6,
-	// 				'item': 'no one...'
-	// 			}
-	// 		}
-	// 	},
-	// 	6:{
-	// 		'question': 'How soon do you need a website?',
-	// 		'answer':{
-	// 			1:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 7,
-	// 				'item': 'hella fast!!!'
-	// 			},
-	// 			2:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 7,
-	// 				'item': '1 - 2 weeks'
-	// 			},
-	// 			3:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 7,
-	// 				'item': 'in a month'
-	// 			},
-	// 			4:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 7,
-	// 				'item': 'month+'
-	// 			},
-	// 			5:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 7,
-	// 				'item': 'what\'s a website?'
-	// 			}
-	// 		}
-	// 	},
-	// 	7:{
-	// 		'question': 'How many pages (estimate) will your website consist of?',
-	// 		'answer':{
-	// 			1:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 8,
-	// 				'item': '1 - 5'
-	// 			},
-	// 			2:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 8,
-	// 				'item': '5 - 10'
-	// 			},
-	// 			3:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 8,
-	// 				'item': '10 - 15'
-	// 			},
-	// 			4:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 8,
-	// 				'item': '15+'
-	// 			}
-	// 		}
-	// 	},
-	// 	8:{
-	// 		'question': 'What will be the primary use of your website?',
-	// 		'answer':{
-	// 			1:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 9,
-	// 				'item': 'blog'
-	// 			},
-	// 			2:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 9,
-	// 				'item': 'ecommerce'
-	// 			},
-	// 			3:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 9,
-	// 				'item': 'personal / portfolio'
-	// 			},
-	// 			4:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 9,
-	// 				'item': 'business'
-	// 			},
-	// 			5:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 9,
-	// 				'item': 'social network / forum'
-	// 			},
-	// 			6:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 9,
-	// 				'item': 'custom website'
-	// 			}
-	// 		}
-	// 	},
-	// 	9:{
-	// 		'question': 'Would you like to use a popular CMS to manage the content on your website?',
-	// 		'answer':{
-	// 			1:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 10,
-	// 				'item': 'wordpress'
-	// 			},
-	// 			2:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 10,
-	// 				'item': 'shopify'
-	// 			},
-	// 			3:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 10,
-	// 				'item': 'magento'
-	// 			},
-	// 			4:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 11,
-	// 				'item': 'no thanks'
-	// 			}
-	// 		}
-	// 	},
-	// 	10:{
-	// 		'question': 'Will there be someone managing the website once it\'s done?',
-	// 		'answer':{
-	// 			1:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 11,
-	// 				'item': 'yes'
-	// 			},
-	// 			2:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 11,
-	// 				'item': 'no'
-	// 			}
-	// 		}
-	// 	},
-	// 	11:{
-	// 		'question': 'Are there any websites that you like the design and functionality of?',
-	// 		'answer':{
-	// 			1:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 16,
-	// 				'item': 'yes'
-	// 			},
-	// 			2:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 12,
-	// 				'item': 'no'
-	// 			}
-	// 		}
-	// 	},
-	// 	12:{
-	// 		'question': 'Does the website need to be responsive?',
-	// 		'answer':{
-	// 			1:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 13,
-	// 				'item': 'yes'
-	// 			},
-	// 			2:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 13,
-	// 				'item': 'no'
-	// 			}
-	// 		}
-	// 	},
-	// 	13:{
-	// 		'question': 'Will content for the website be provided upon start?',
-	// 		'answer':{
-	// 			1:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 14,
-	// 				'item': 'yes'
-	// 			},
-	// 			2:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 14,
-	// 				'item': 'no'
-	// 			}
-	// 		}
-	// 	},
-	// 	14:{
-	// 		'question': 'Would you like to schedule a meeting?',
-	// 		'answer':{
-	// 			1:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 15,
-	// 				'item': 'yes'
-	// 			},
-	// 			2:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 17,
-	// 				'item': 'no'
-	// 			}
-	// 		}
-	// 	},
-	// 	15:{
-	// 		'question': 'When would you like to schedule a meeting to chat?',
-	// 		'answer':{
-	// 			1:{
-	// 				'type': 'date',
-	// 				'dynamic': true,
-	// 				'route': 17,
-	// 				'identity': 'mm-dynamic-date'
-	// 			}
-	// 		}
-	// 	},
-	// 	16:{
-	// 		'question': 'What type of layout do you like?',
-	// 		'answer':{
-	// 			1:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 12,
-	// 				'item': 'full width'
-	// 			},
-	// 			2:{
-	// 				'type': 'radio',
-	// 				'dynamic': true,
-	// 				'route': 12,
-	// 				'item': 'boxed'
-	// 			}
-	// 		}
-	// 	},
-	// 	17:{
-	// 		'question': 'We\'re almost done... We just need some contact info.',
-	// 		'answer':{
-	// 			1:{
-	// 				'type': 'form',
-	// 				'dynamic': true,
-	// 				'route': 18,
-	// 				'placeholder': 'Barry',
-	// 				'identity': 'mm-dynamic-fn',
-	// 				'title': 'First Name'
-	// 			},
-	// 			2:{
-	// 				'type': 'form',
-	// 				'dynamic': true,
-	// 				'route': 18,
-	// 				'placeholder': 'Allen',
-	// 				'identity': 'mm-dynamic-ln',
-	// 				'title': 'Last Name'
-	// 			},
-	// 			3:{
-	// 				'type': 'form',
-	// 				'dynamic': true,
-	// 				'route': 18,
-	// 				'placeholder': 'barry@example.com',
-	// 				'identity': 'mm-dynamic-em',
-	// 				'title': 'Email'
-	// 			}
-	// 		}
-	// 	}
-	// 	// 18:{
-	// 	// 	'question': 'Great job! Thanks for submitting a quote to WebDevlopr, you should be receiving an email soon.',
-	// 	// 	'answer': {}
-	// 	// }
-	// };
+	//var survey = JSON.parse(data);
+	//console.log("survey:", data);
+	var survey = {
+		1:{
+			'question': 'Do you have a website?',
+			'answer':{
+				1:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 4,
+					'item': 'yes'
+				},
+				2:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 2,
+					'item': 'no'
+				}
+			}
+		},
+		2:{
+			'question': 'Do you have a domain?',
+			'answer':{
+				1:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 3,
+					'item': 'yes'
+				},
+				2:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 6,
+					'item': 'no'
+				}
+			}
+		},
+		3:{
+			'question': 'Where did you purchase your domain?',
+			'answer':{
+				1:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 5,
+					'item': 'namecheap.com'
+				},
+				2:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 5,
+					'item': 'godaddy.com'
+				},
+				3:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 5,
+					'item': 'bluehost.com'
+				},
+				4:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 5,
+					'item': '1and1.com'
+				},
+				5:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 5,
+					'item': 'other'
+				}
+			}
+		},
+		4:{
+			'question': 'What is your domain name?',
+			'answer':{
+				// 1:{
+				// 	'type': 'radio',
+				// 	'dynamic': true,
+				// 	'route': 3,
+				// 	'item': 'kavada.com'
+				// },
+				// 2:{
+				// 	'type': 'radio',
+				// 	'dynamic': true,
+				// 	'route': 3,
+				// 	'item': 'mathewmaione.com'
+				// },
+				// 3:{
+				// 	'type': 'radio',
+				// 	'dynamic': true,
+				// 	'route': 3,
+				// 	'item': 'educoded.com'
+				// },
+				// 4:{
+				// 	'type': 'radio',
+				// 	'dynamic': true,
+				// 	'route': 3,
+				// 	'item': 'webdevlopr.com'
+				// }
+				1:{
+					'type': 'text',
+					'dynamic': true,
+					'route': 3,
+					'placeholder': 'example.com',
+					'identity': 'mm-dynamic-domain'
+				}
+			}
+		},
+		5:{
+			'question': 'Who is hosting your domain?',
+			'answer':{
+				1:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 6,
+					'item': 'godaddy'
+				},
+				2:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 6,
+					'item': 'host gator'
+				},
+				3:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 6,
+					'item': 'amazon'
+				},
+				4:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 6,
+					'item': 'not listed'
+				},
+				5:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 6,
+					'item': 'no one...'
+				}
+			}
+		},
+		6:{
+			'question': 'How soon do you need a website?',
+			'answer':{
+				1:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 7,
+					'item': 'hella fast!!!'
+				},
+				2:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 7,
+					'item': '1 - 2 weeks'
+				},
+				3:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 7,
+					'item': 'in a month'
+				},
+				4:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 7,
+					'item': 'month+'
+				},
+				5:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 7,
+					'item': 'what\'s a website?'
+				}
+			}
+		},
+		7:{
+			'question': 'How many pages (estimate) will your website consist of?',
+			'answer':{
+				1:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 8,
+					'item': '1 - 5'
+				},
+				2:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 8,
+					'item': '5 - 10'
+				},
+				3:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 8,
+					'item': '10 - 15'
+				},
+				4:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 8,
+					'item': '15+'
+				}
+			}
+		},
+		8:{
+			'question': 'What will be the primary use of your website?',
+			'answer':{
+				1:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 9,
+					'item': 'blog'
+				},
+				2:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 9,
+					'item': 'ecommerce'
+				},
+				3:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 9,
+					'item': 'personal / portfolio'
+				},
+				4:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 9,
+					'item': 'business'
+				},
+				5:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 9,
+					'item': 'social network / forum'
+				},
+				6:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 9,
+					'item': 'custom website'
+				}
+			}
+		},
+		9:{
+			'question': 'Would you like to use a popular CMS to manage the content on your website?',
+			'answer':{
+				1:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 10,
+					'item': 'wordpress'
+				},
+				2:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 10,
+					'item': 'shopify'
+				},
+				3:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 10,
+					'item': 'magento'
+				},
+				4:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 11,
+					'item': 'no thanks'
+				}
+			}
+		},
+		10:{
+			'question': 'Will there be someone managing the website once it\'s done?',
+			'answer':{
+				1:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 11,
+					'item': 'yes'
+				},
+				2:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 11,
+					'item': 'no'
+				}
+			}
+		},
+		11:{
+			'question': 'Are there any websites that you like the design and functionality of?',
+			'answer':{
+				1:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 16,
+					'item': 'yes'
+				},
+				2:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 12,
+					'item': 'no'
+				}
+			}
+		},
+		12:{
+			'question': 'Does the website need to be responsive?',
+			'answer':{
+				1:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 13,
+					'item': 'yes'
+				},
+				2:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 13,
+					'item': 'no'
+				}
+			}
+		},
+		13:{
+			'question': 'Will content for the website be provided upon start?',
+			'answer':{
+				1:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 14,
+					'item': 'yes'
+				},
+				2:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 14,
+					'item': 'no'
+				}
+			}
+		},
+		14:{
+			'question': 'Would you like to schedule a meeting?',
+			'answer':{
+				1:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 15,
+					'item': 'yes'
+				},
+				2:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 17,
+					'item': 'no'
+				}
+			}
+		},
+		15:{
+			'question': 'When would you like to schedule a meeting to chat?',
+			'answer':{
+				1:{
+					'type': 'date',
+					'dynamic': true,
+					'route': 17,
+					'identity': 'mm-dynamic-date'
+				}
+			}
+		},
+		16:{
+			'question': 'What type of layout do you like?',
+			'answer':{
+				1:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 12,
+					'item': 'full width'
+				},
+				2:{
+					'type': 'radio',
+					'dynamic': true,
+					'route': 12,
+					'item': 'boxed'
+				}
+			}
+		},
+		17:{
+			'question': 'We\'re almost done... We just need some contact info.',
+			'answer':{
+				1:{
+					'type': 'form',
+					'dynamic': true,
+					'route': 18,
+					'placeholder': 'Barry',
+					'identity': 'mm-dynamic-fn',
+					'title': 'First Name'
+				},
+				2:{
+					'type': 'form',
+					'dynamic': true,
+					'route': 18,
+					'placeholder': 'Allen',
+					'identity': 'mm-dynamic-ln',
+					'title': 'Last Name'
+				},
+				3:{
+					'type': 'form',
+					'dynamic': true,
+					'route': 18,
+					'placeholder': 'barry@example.com',
+					'identity': 'mm-dynamic-em',
+					'title': 'Email'
+				}
+			}
+		}
+		// 18:{
+		// 	'question': 'Great job! Thanks for submitting a quote to WebDevlopr, you should be receiving an email soon.',
+		// 	'answer': {}
+		// }
+	};
 
 	for (var i = 1; i <= Object.keys(survey).length; i++) {
 
