@@ -3,6 +3,9 @@
 jQuery(document).ready(function() {
 	//var survey = JSON.parse(data);
 	//console.log("survey:", data);
+	$.getJSON("./folder/dist/data.json", function(json) {
+		console.log(json); // this will show the info it in firebug console
+	});
 	var survey = {
 		1:{
 			'question': 'Do you have a website?',
